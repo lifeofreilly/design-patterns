@@ -1,7 +1,6 @@
 package com.gmail.lifeofreilly.strategy;
 
 public abstract class Duck {
-
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
