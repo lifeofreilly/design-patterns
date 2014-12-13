@@ -1,7 +1,6 @@
 package com.gmail.lifeofreilly.factoryidiom;
 
 public class PizzaStore {
-
     SimplePizzaFactory factory;
 
     public PizzaStore(SimplePizzaFactory factory) {

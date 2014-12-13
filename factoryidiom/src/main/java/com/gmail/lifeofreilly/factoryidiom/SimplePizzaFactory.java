@@ -1,11 +1,8 @@
 package com.gmail.lifeofreilly.factoryidiom;
 
-/**
- * Hello world!
- */
 public class SimplePizzaFactory {
-    public Pizza createPizza(String type) {
 
+    public Pizza createPizza(String type) {
         Pizza pizza = null;
 
         if (type.equals("cheese")) {
@@ -15,6 +12,5 @@ public class SimplePizzaFactory {
         }
 
         return pizza;
-
     }
 }
