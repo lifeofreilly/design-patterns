@@ -18,9 +18,9 @@ public class SimpleRemoteControlTest {
     };
 
     @Test
-    public void testButtonWasPressed() throws Exception {
+    public void testSimpleRemote() throws Exception {
         SimpleRemoteControl remote = new SimpleRemoteControl();
-        Light light = new Light("Simple light.");
+        Light light = new Light("Simple Light");
         LightOnCommand lightOn = new LightOnCommand(light);
         remote.setCommand(lightOn);
         remote.buttonWasPressed();

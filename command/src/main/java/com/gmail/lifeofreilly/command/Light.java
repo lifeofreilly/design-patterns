@@ -11,12 +11,12 @@ public class Light {
 
     public void on() {
         on = true;
-        System.out.println("The light is now on.");
+        System.out.println("The " + description + " light is now on.");
     }
 
     public void off() {
         on = false;
-        System.out.println("The light is now off.");
+        System.out.println("The " + description + " light is now off.");
     }
 
     public boolean isOn() {
