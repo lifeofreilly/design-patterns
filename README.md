@@ -11,3 +11,7 @@ The Adapter Pattern converts the interface of a class into another interface the
 ## /command
 
 The Command Pattern encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
+
+## /templatemethod
+
+The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
