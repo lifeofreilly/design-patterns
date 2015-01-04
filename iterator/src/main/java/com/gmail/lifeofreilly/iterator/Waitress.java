@@ -1,24 +1,22 @@
 package com.gmail.lifeofreilly.iterator;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Waitress {
-    Menu pancakeHouseMenu;
-    Menu dinnerMenu;
+    ArrayList menus;
 
-    public Waitress(Menu pancakeHouseMenu, Menu dinnerMenu) {
-        this.pancakeHouseMenu = pancakeHouseMenu;
-        this.dinnerMenu = dinnerMenu;
+    public Waitress(ArrayList menus) {
+        this.menus = menus;
     }
 
     public void printMenu() {
-        Iterator panckakeIterator = pancakeHouseMenu.createIterator();
-        Iterator dinnerIterator = dinnerMenu.createIterator();
+        Iterator menuIterator = menus.iterator();
 
-        System.out.println("MENU\n----\nBREAKFAST");
-        printMenu(panckakeIterator);
-        System.out.println("\nLUNCH");
-        printMenu(dinnerIterator);
+        while (menuIterator.hasNext()) {
+            Menu menu = (Menu)menuIterator.next();
+            printMenu(menu.createIterator());
+        }
     }
 
     private void printMenu(Iterator iterator) {

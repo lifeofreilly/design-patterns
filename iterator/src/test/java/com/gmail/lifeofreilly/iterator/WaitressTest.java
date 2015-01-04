@@ -6,6 +6,8 @@ import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
+import java.util.ArrayList;
+
 public class WaitressTest {
 
     @Rule
@@ -17,9 +19,16 @@ public class WaitressTest {
 
     @Test
     public void WaitressPrintMenuTest() throws Exception {
-        Menu pancakeHouseMenu = new PancakeHouseMenu();
+        Menu breakfastMenu = new PancakeHouseMenu();
+        Menu lunchMenu = new CafeMenu();
         Menu dinnerMenu = new DinnerMenu();
-        Waitress waitress = new Waitress(pancakeHouseMenu, dinnerMenu);
+
+        ArrayList<Menu> menus = new ArrayList<Menu>();
+        menus.add(breakfastMenu);
+        menus.add(lunchMenu);
+        menus.add(dinnerMenu);
+
+        Waitress waitress = new Waitress(menus);
         waitress.printMenu();
     }
 
