@@ -33,6 +33,9 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 ## /singleton
 The Singleton Pattern ensures a class has only one instance, and provides a global point to access it.
 
+##/state
+The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
 ## /strategy
 The Strategy Pattern defines a family of algorithims, encapsulates each one, and makes them interchangable. Strategy lets the algorithims vary independently from clients that use it.
 
