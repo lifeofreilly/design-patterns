@@ -12,6 +12,9 @@ The Adapter Pattern converts the interface of a class into another interface the
 
 The Command Pattern encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
 
+## /composite
+The composite pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and composition of objects uniformly.
+
 ## /iterator
 The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underling representation.
 
