@@ -6,8 +6,6 @@ import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import static org.junit.Assert.assertEquals;
-
 public class GumballMachineTest {
 
     @Rule
@@ -18,9 +16,8 @@ public class GumballMachineTest {
     };
 
     @Test
-    public void myTest() throws Exception {
-        GumballMachine gumballMachine =
-                new GumballMachine(10);
+    public void gumballMonitorTestDrive() throws Exception {
+        GumballMachine gumballMachine = new GumballMachine("San Jose", 10);
 
         System.out.println(gumballMachine);
 
