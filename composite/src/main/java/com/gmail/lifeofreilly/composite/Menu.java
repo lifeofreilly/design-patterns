@@ -35,7 +35,7 @@ public class Menu extends MenuComponent {
 
     @Override
     public MenuComponent getChild(int i) {
-        return (MenuComponent)menuComponents.get(i);
+        return (MenuComponent) menuComponents.get(i);
     }
 
     @Override
@@ -56,7 +56,7 @@ public class Menu extends MenuComponent {
 
         Iterator iterator = menuComponents.iterator();
         while (iterator.hasNext()) {
-            MenuComponent menuComponent = (MenuComponent)iterator.next();
+            MenuComponent menuComponent = (MenuComponent) iterator.next();
             menuComponent.print();
         }
     }
