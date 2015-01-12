@@ -27,6 +27,9 @@ The Simple Factory isn't actually a Design Pattern; it's more of a programming i
 ## /iterator
 The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underling representation.
 
+## /mvc
+The Model–view–controller (MVC) is a software architectural pattern for implementing user interfaces. It divides a given software application into three interconnected parts, so as to separate internal representations of information from the ways that information is presented to or accepted from the user.
+
 ## /nativeobserver
 The Weather Station from /observer reworked to use java.util.Observable
 
