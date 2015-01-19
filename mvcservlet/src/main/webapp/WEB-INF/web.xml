@@ -10,11 +10,11 @@
     <description>DJView Servlet Application</description>
     <display-name>DJView Servlet Application</display-name>
     <servlet>
-        <servlet-name>DJViewServlet</servlet-name>
-        <servlet-class>com.gmail.lifeofreilly.mvcservlet.DJViewServlet</servlet-class>
+        <servlet-name>BeatControllerServlet</servlet-name>
+        <servlet-class>com.gmail.lifeofreilly.mvcservlet.BeatControllerServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>DJViewServlet</servlet-name>
-        <url-pattern>/servlet/DJViewServlet</url-pattern>
+        <servlet-name>BeatControllerServlet</servlet-name>
+        <url-pattern>/servlet/BeatControllerServlet</url-pattern>
     </servlet-mapping>
 </web-app>

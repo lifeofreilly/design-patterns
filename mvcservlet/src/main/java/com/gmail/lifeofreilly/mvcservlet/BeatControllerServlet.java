@@ -8,7 +8,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 
-public class DJViewServlet extends HttpServlet {
+public class BeatControllerServlet extends HttpServlet {
 
     private static final long serialVersionUID = 2L;
 
@@ -18,17 +18,15 @@ public class DJViewServlet extends HttpServlet {
         getServletContext().setAttribute("beatModel", beatModel);
     }
 
-    public void doGet(HttpServletRequest request,
-                      HttpServletResponse response)
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         doPost(request, response);
     }
 
-    public void doPost(HttpServletRequest request,
-                       HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
-        BeatModel beatModel =
-                (BeatModel) getServletContext().getAttribute("beatModel");
+
+        BeatModel beatModel = (BeatModel) getServletContext().getAttribute("beatModel");
 
         String bpm = request.getParameter("bpm");
         if (bpm == null) {
